@@ -2,19 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spin : MonoBehaviour
+public class ChangeColor : MonoBehaviour
 {
-    public float speed;
-
     // Start is called before the first frame update
     void Start()
     {
-        Transform plane = GetComponent<Transform>();
+        var renderer = GetComponent<Renderer>();
+        renderer.material.SetColor("_Color", Color.magenta);
     }
 
     // Update is called once per frame
     void Update()
     {
-       transform.Rotate(Time.deltaTime * speed, 0, 0, Space.Self); 
+
     }
 }
