@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class NewScript : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public static class Loader {
+    
+    public enum Scene {
+        GameScene,
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public static void Load(Scene scene){
+        SceneManager.LoadScene(scene.ToString());
     }
 }
