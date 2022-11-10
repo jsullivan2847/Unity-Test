@@ -8,7 +8,7 @@ public class ChangeColor : MonoBehaviour
     void Start()
     {
         var renderer = GetComponent<Renderer>();
-        renderer.material.SetColor("_Color", Color.magenta);
+        renderer.material.SetColor("_Color", Random.ColorHSV());
     }
 
     // Update is called once per frame
