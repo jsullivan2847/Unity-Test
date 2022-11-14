@@ -18,16 +18,8 @@ public class ChangeColor : MonoBehaviour
     {
           if(Input.GetKeyDown(KeyCode.Tab) && highlight.isGrown){
              Renderer renderer = GetComponent<Renderer>();
-             RaycastHit hit;
-             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
              renderer.material.SetColor("_Color", Random.ColorHSV());
 
-    }
-    if(highlight.isGrown){
-        Debug.Log("grown");
-    }
-    else if (!highlight.isGrown){
-        Debug.Log("notgrown");
     }
     }
 }
