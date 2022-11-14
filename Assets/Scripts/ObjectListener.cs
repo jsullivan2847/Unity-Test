@@ -22,12 +22,12 @@ public class ObjectListener : MonoBehaviour
         }
         if(Input.GetMouseButtonDown(0)){
              RaycastHit hit;
-       Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
        if(Physics.Raycast(ray, out hit, 100.0f)){
 
         if(hit.transform){
-            PrintName(hit.transform.gameObject);
+            // PrintName(hit.transform.gameObject);
             if(clicked){
                 clicked = false;
             }
