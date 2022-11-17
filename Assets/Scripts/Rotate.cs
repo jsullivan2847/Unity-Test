@@ -23,7 +23,7 @@ public class Rotate : MonoBehaviour
        Swipe(); 
        if(transform.rotation != target.transform.rotation){
         var step = speed * Time.deltaTime;
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, target.transform.rotation, speed);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, target.transform.rotation, step);
        }
     }
 
