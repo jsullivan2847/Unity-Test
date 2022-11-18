@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4621946119331739126}
   - component: {fileID: 367373921311796457}
   m_Layer: 0
-  m_Name: Multi-Side Cube
+  m_Name: Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
