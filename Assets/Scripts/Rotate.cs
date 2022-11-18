@@ -10,6 +10,8 @@ public class Rotate : MonoBehaviour
     Vector3 prevMousePos;
     Vector3 mouseDelta;
     public float speed;
+    
+    bool trackpad;
 
     public GameObject target;
 
@@ -70,6 +72,7 @@ public class Rotate : MonoBehaviour
 
     void Drag(){
         //while mouse is held down the cube can be moved around it's central axis to provide visual feedback
+       
         if(Input.GetMouseButton(1)){
                 mouseDelta = Input.mousePosition - prevMousePos;
         mouseDelta *= 0.5f; //reduces rotation speed;
