@@ -9,7 +9,7 @@ namespace UnityStandardAssets.Utility
     {
         // An incredibly simple menu which, when given references
         // to gameobjects in the scene
-        public Text camSwitchButton;W
+        public Text camSwitchButton;
         public GameObject[] objects;
 
 
@@ -22,6 +22,8 @@ namespace UnityStandardAssets.Utility
             m_CurrentActiveObject = 0;
             camSwitchButton.text = objects[m_CurrentActiveObject].name;
         }
+
+        //Grinding for the commit...
 
 
         public void NextCamera()
